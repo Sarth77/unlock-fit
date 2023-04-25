@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "pictures-10"
-  }
+    "default": "pictures-10",
+    "picture-10": "pictures-10"
+  },
+  "targets": {},
+  "etags": {}
 }

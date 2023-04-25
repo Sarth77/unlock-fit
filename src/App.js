@@ -10,6 +10,7 @@ import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import AuthRedirect from "./components/auth/AuthRedirect";
 import RequireAuth from "./components/auth/RequireAuth";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -59,7 +60,9 @@ function App() {
                   </RequireAuth>
                 }
               />
+              <Route path="*" element={<ErrorPage />} />
             </Route>
+            <Route path="*" element={<ErrorPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
